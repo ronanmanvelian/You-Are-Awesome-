@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,17 +18,8 @@ class ViewController: UIViewController {
 
     @IBAction func showMessagePressed(_ sender: UIButton) {
         messageLabel.text = "You Are Awesome!"
-        messageLabel.textColor = UIColor.blue
-        messageLabel.textAlignment = NSTextAlignment.left
-    }
-    
-    @IBAction func showAnotherMessagePressed(_ sender: UIButton) {
-        messageLabel.text = "You Are Great!"
-        messageLabel.textColor = .systemRed
-        messageLabel.textAlignment = NSTextAlignment.right
-    }
-    
-        
+        imageView.image = UIImage.init(named: "image0")
     }
 
-
+}
+    
